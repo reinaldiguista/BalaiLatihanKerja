@@ -75,17 +75,23 @@
         <div class="login-block">
            <form method="post" action="<?php echo base_url();?>user/login/login_form">
             <div class="form-group">
-              <label for="usrname"><span class="glyphicon glyphicon-user"></span> Username</label><br>
+              <label for="usrname"><span class="glyphicon glyphicon-user"></span> No. KTP / Alamat Email</label><br>
               <input type="text" name="username" placeholder="Username" id="username" size="20" class="form-control"/><?php echo form_error('username');?> 
             </div>
             <div class="form-group">
               <label for="psw"><span class="glyphicon glyphicon-eye-open"></span> Password</label>
               <input type="password" name="password" placeholder="Password" id="password" size="15" class="form-control"/><?php echo form_error('npm');?>
             </div>
-            <div class="checkbox">
+            <!-- <div class="checkbox">
               <label><input type="checkbox" value="" checked>Remember me</label>
-            </div>
-              <font color=#fff><button type="submit" class="btn btn-block"><span class="glyphicon glyphicon-log-in"></span> Login</button></font>
+            </div> -->
+              <font color=#fff><button type="submit" class="btn btn-block"><span class="glyphicon glyphicon-log-in"></span> Masuk Sekarang</button></font>
+              <div class="text-center">
+                <a href="<?php echo site_url(); ?>#" >Lupa Password?</a>
+              </div>
+              <div class="text-center">
+                <a href="<?php echo site_url(); ?>Signup" >Tidak memiliki akun? Daftar Sekarang?</a>
+              </div>
           </form>
           </div>
         </div>
@@ -133,7 +139,7 @@ jQuery(document).ready(function($) {
 		<span class="icon-bar"> </span> 
 		</button>
 		<a class=navbar-header href="<?php echo base_url(); ?>welcome">
-        	  <h1><strong>Balai Latihan Kerja</strong></h1>
+        	  <h2><strong>Balai Latihan Kerja</strong></h2>
 	</div>
 	<!-- Collect the nav links, forms, and other content for toggling -->
 		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -144,7 +150,8 @@ jQuery(document).ready(function($) {
 			<!--<li><a href="<?php echo base_url(); ?>welcome/prosedur"><span data-hover="Prosedur">Prosedur</span></a></li>-->
 			<!--<li><a href="<?php echo base_url(); ?>welcome/profil"><span data-hover="Profil">Profil</span></a></li>-->
 			<li><a href="#myModal" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-		</ul>
+     
+    </ul>
 		<div class="clearfix"> </div>
 	</div><!-- /.navbar-collapse -->
 	<!-- /.container-fluid -->
